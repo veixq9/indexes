@@ -38,7 +38,7 @@
                                        
 
                                        {:title 
-                                        "mastodon" :url "https://mastodon.social/veixq9"}
+                                        "mastodon" :url "https://mastodon.social/@veixq9"}
                                        
                                        {:title 
                                         "github" :url "https://github.com/veixq9"}
