@@ -1,6 +1,6 @@
 ;; shadow-cljs configuration
 {:source-paths
- ["src"]
+ ["src/"]
 
  :dependencies
  [
@@ -17,18 +17,17 @@
 
  :nrepl {:middleware [cider.nrepl/cider-middleware ;; it's advisable to explicitly add this middleware. It's automatically added by shadow-cljs (if available in the classpath), unless `:nrepl {:cider false}`
                       refactor-nrepl.middleware/wrap-refactor] ;; refactor-nrepl is optional
-         :port 50655} ;; optional - if not specified, a random free port will be used
+         :port 50656} ;; optional - if not specified, a random free port will be used
  
  :builds
  {
-
   :indexes {
             ;; :asset-path "public/voidnet"
-            :modules {:main {:init-fn symautre.indexes-home-page/init}}
+            :modules {:main {:init-fn symautre.indexes.core/init}}
             :output-dir "public/indexes/js"
             :target :browser
             ;; :dev-http {8081 "public/voidnet"}
-            :devtools {:after-load  symautre.indexes-home-page/init
+            :devtools {:after-load  symautre.indexes.core/init
                        :http-root   "public/indexes"
                        :http-port   3006
                        ;; :preloads    [shadow.cljs.devtools.client.hud
@@ -37,9 +36,5 @@
                        ;;               devtools.preload]
                        }
             }
-
-
-
-  }
- 
+  } 
  }
