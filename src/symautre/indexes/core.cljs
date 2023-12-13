@@ -42,7 +42,12 @@
                                        
                                        {:title 
                                         "github" :url "https://github.com/veixq9"}
-                                       "https://github.com/veixq9"]]
+
+
+                                       {:title "voidnet"
+                                        :url "https://veixq9.github.io/voidnet/public/voidnet/index.html"}
+
+                                       ]]
               [:div
                [:a {:key url
                     ;;:src url
