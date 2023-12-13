@@ -23,14 +23,15 @@
       #_[:p.w3-xxlarge.w3-italic "links"]
       [:br]
       (into [:div.w3-container]
-            (for [{:keys [url title]} [{:url "https://www.tumblr.com/blog/arrowsfrom"
-                                        :title "tumblr"}
-                                       {:url
-                                        "https://twitter.com/veixq9"
-                                        :title "twitter"}
-                                       {:title "soundcloud" :url 
-
-                                        "https://soundcloud.com/veixq9"}
+            (for [{:keys [url title]} [
+                                       #_{:url "https://www.tumblr.com/blog/arrowsfrom"
+                                          :title "tumblr"}
+                                       #_{:url
+                                          "https://twitter.com/veixq9"
+                                          :title "twitter"}
+                                       
+                                       #_{:title "soundcloud" :url 
+                                          "https://soundcloud.com/veixq9"}
 
                                        {:title "deviantart"
                                         :url "https://www.deviantart.com/likebad"}

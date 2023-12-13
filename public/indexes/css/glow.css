@@ -1,0 +1,40 @@
+/* glow */
+.glow {
+  font-size: 80px;
+  color: #000000;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 6s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+	
+	text-shadow: 0 0 10px yellow, 0 0 20px #006400  , 0 0 30px #006400  , 0 0 40px  #006400 , 0 0 50px #006400 , 0 0 60px #006400, 0 0 70px  #00fa9a;
+    }
+    to {
+	
+	text-shadow: 0 0 20px cyan, 0 0 30px  royalblue, 0 0 40px #000080, 0 0 50px #000080, 0 0 60px #000080, 0 0 70px #000080, 0 0 80px #000080;
+    }
+}
+
+/* glow purple */
+.glow2 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow2 1s ease-in-out infinite alternate;
+  -moz-animation: glow2 1s ease-in-out infinite alternate;
+  animation: glow2 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}

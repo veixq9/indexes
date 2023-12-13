@@ -5,8 +5,8 @@
             ))
 
 (do
-  (shadow/watch :voidnet)
-  (shadow/repl :voidnet)
+  (shadow/watch :indexes)
+  (shadow/repl :indexes)
   ;; (shadow/browser-repl :voidnet)
   )
 
