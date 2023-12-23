@@ -26,9 +26,9 @@
             (for [{:keys [url title]} [
                                        #_{:url "https://www.tumblr.com/blog/arrowsfrom"
                                           :title "tumblr"}
-                                       #_{:url
-                                          "https://twitter.com/veixq9"
-                                          :title "twitter"}
+                                       {:url
+                                        "https://twitter.com/vcq88ts50024"
+                                        :title "twitter"}
                                        
                                        #_{:title "soundcloud" :url 
                                           "https://soundcloud.com/veixq9"}
@@ -45,7 +45,7 @@
 
 
                                        {:title "voidnet"
-                                        :url "https://veixq9.github.io/voidnet/public/voidnet/index.html"}
+                                        :url "https://veixq9.github.io/voidnet/"}
 
                                        ]]
               [:div
