@@ -43,7 +43,9 @@
                                        {:title 
                                         "github" :url "https://github.com/veixq9"}
 
-
+                                       {:title "nexurdoormat@dlive.tv"
+                                        :url "https://dlive.tv/nexusdoormat"}                                       
+                                       
                                        {:title "voidnet"
                                         :url "https://veixq9.github.io/voidnet/"}
 
