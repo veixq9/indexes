@@ -50,7 +50,7 @@
                                         :url "https://veixq9.github.io/voidnet/"}
 
                                        {:title "veixq9@com.youtube"
-                                        :url "https://veixq9.github.io/voidnet/"}
+                                        :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
 
                                        ]]
               [:div
