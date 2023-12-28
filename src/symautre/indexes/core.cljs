@@ -52,6 +52,10 @@
                                        {:title "veixq9@com.youtube"
                                         :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
 
+
+                                       {:title "veixq9@soundcloud"
+                                        :url "https://soundcloud.com/veixq9"}                                       
+
                                        ]]
               [:div
                [:a {:key url
