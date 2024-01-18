@@ -54,7 +54,10 @@
 
 
                                        {:title "veixq9@soundcloud"
-                                        :url "https://soundcloud.com/veixq9"}                                       
+                                        :url "https://soundcloud.com/veixq9"}
+
+                                       {:title "veixq9@com.pinterest"
+                                        :url "https://www.pinterest.com/veixq9/"}
 
                                        ]]
               [:div
