@@ -59,7 +59,8 @@
                                        {:title "veixq9@com.pinterest"
                                         :url "https://www.pinterest.com/veixq9/"}
 
-                                       {:title "nilspore@https://app.revolt.chat"
+                                       {:title "candy shop"
+                                        :description "nilspore@https://app.revolt.chat"
                                         :url "https://rvlt.gg/Ac9PKyMf"}                                       
 
                                        ]]
