@@ -59,6 +59,12 @@
                                        {:title "veixq9@com.pinterest"
                                         :url "https://www.pinterest.com/veixq9/"}
 
+                                       {:title "veixq9@com.pinterest"
+                                        :url "https://app.revolt.chat/server/01GBCDT8QAVC3CVTCKC5R4D5WF/channel/01H08HCH5PAN1NN7KE1275WS2P"}
+
+                                       
+                                       
+
                                        ]]
               [:div
                [:a {:key url
