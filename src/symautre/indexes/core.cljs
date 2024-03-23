@@ -26,7 +26,7 @@
             (for [{:keys [url title]} [
                                        #_{:url "https://www.tumblr.com/blog/arrowsfrom"
                                           :title "tumblr"}
-                                       {:url
+                                       #_{:url
                                         "https://twitter.com/vcq88ts50024"
                                         :title "twitter"}
                                        
@@ -37,8 +37,8 @@
                                         :url "https://www.deviantart.com/likebad"}
                                        
 
-                                       {:title 
-                                        "mastodon" :url "https://mastodon.social/@veixq9"}
+                                       ;; {:title 
+                                       ;;  "mastodon" :url "https://mastodon.social/@veixq9"}
                                        
                                        {:title 
                                         "github" :url "https://github.com/veixq9"}
@@ -65,7 +65,7 @@
                                        {:title "veixq5@com.pinterest"
                                         :url "https://www.pinterest.de/veixq5/"}
 
-                                       {:title "candy shop"
+                                       {:title "nilspore@app.revolt.chat"
                                         :description "nilspore@https://app.revolt.chat"
                                         :url "https://rvlt.gg/Ac9PKyMf"}
 
