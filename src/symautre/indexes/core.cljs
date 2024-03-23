@@ -52,16 +52,24 @@
                                        {:title "veixq9@com.youtube"
                                         :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
 
+                                       {:title "circuitbrainfile@soundcloud" :url 
+                                        "https://soundcloud.com/circuitbrainfile"
+                                        }
+                                       {:title "veix-quadron@soundcloud" :url
+                                        "https://soundcloud.com/veix-quadron"
 
-                                       {:title "veixq9@soundcloud"
-                                        :url "https://soundcloud.com/veixq9"}
+                                        }
+                                       ;; {:title "veixq9@soundcloud"
+                                       ;;  :url "https://soundcloud.com/veixq9"}
 
-                                       {:title "veixq9@com.pinterest"
-                                        :url "https://www.pinterest.com/veixq9/"}
+                                       {:title "veixq5@com.pinterest"
+                                        :url "https://www.pinterest.de/veixq5/"}
 
                                        {:title "candy shop"
                                         :description "nilspore@https://app.revolt.chat"
-                                        :url "https://rvlt.gg/Ac9PKyMf"}                                       
+                                        :url "https://rvlt.gg/Ac9PKyMf"}
+
+                                       
 
                                        ]]
               [:div
