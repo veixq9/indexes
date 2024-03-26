@@ -24,19 +24,25 @@
       [:br]
       (into [:div.w3-container]
             (for [{:keys [url title]} [
+
+                                       {:title "voidnet"
+                                        :url "https://veixq9.github.io/voidnet/"}
+                                       
                                        #_{:url "https://www.tumblr.com/blog/arrowsfrom"
                                           :title "tumblr"}
                                        #_{:url
-                                        "https://twitter.com/vcq88ts50024"
-                                        :title "twitter"}
+                                          "https://twitter.com/vcq88ts50024"
+                                          :title "twitter"}
                                        
                                        #_{:title "soundcloud" :url 
                                           "https://soundcloud.com/veixq9"}
 
                                        {:title "deviantart"
                                         :url "https://www.deviantart.com/likebad"}
-                                       
 
+                                       
+                                       
+                                       
                                        ;; {:title 
                                        ;;  "mastodon" :url "https://mastodon.social/@veixq9"}
                                        
@@ -46,8 +52,7 @@
                                        {:title "nexurdoormat@dlive.tv"
                                         :url "https://dlive.tv/nexusdoormat"}                                       
                                        
-                                       {:title "voidnet"
-                                        :url "https://veixq9.github.io/voidnet/"}
+                                       
 
                                        {:title "veixq9@com.youtube"
                                         :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
@@ -70,7 +75,14 @@
                                         :url "https://rvlt.gg/Ac9PKyMf"}
 
                                        
+                                       {:title  "scissors_4d@twitch.tv"
+                                        :url "https://www.twitch.tv/scissors_4d/about" }
 
+                                       {:title  "hoosewatch@twitch.tv"
+                                        :url "https://www.twitch.tv/hoosewatch/about" }
+
+                                       {:title  "z2muchmazvhole@twitch.tv"
+                                        :url "https://www.twitch.tv/z2muchmazvhole/about" }
                                        ]]
               [:div
                [:a {:key url
@@ -79,6 +91,9 @@
                [:br]
                [:br]
                ]))]]))
+
+
+
 
 (defn ^:dev/after-load init []
   (rd/render [indexes]
