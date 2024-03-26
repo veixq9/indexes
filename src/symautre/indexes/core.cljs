@@ -15,82 +15,97 @@
 
 (defn indexes []
   (fn []
-    [:div.w3-container
-     [:h1 "VCN88TS"]
-     [:hr]
+    (let [data [
+                {:title "voidnet"
+                 :url "https://veixq9.github.io/voidnet/"
+                 
+                 }
+                
+                #_{:url "https://www.tumblr.com/blog/arrowsfrom"
+                   :title "tumblr"}
+                #_{:url
+                   "https://twitter.com/vcq88ts50024"
+                   :title "twitter"}
+                
+                #_{:title "soundcloud" :url 
+                   "https://soundcloud.com/veixq9"}
 
-     [:div.w3-container
-      #_[:p.w3-xxlarge.w3-italic "links"]
-      [:br]
-      (into [:div.w3-container]
-            (for [{:keys [url title]} [
+                {:title "likebad@deviantart"
+                 :url "https://www.deviantart.com/likebad"
+                 ;; :icon "https://www.deviantart.com/favicon.ico"
+                 }
 
-                                       {:title "voidnet"
-                                        :url "https://veixq9.github.io/voidnet/"}
-                                       
-                                       #_{:url "https://www.tumblr.com/blog/arrowsfrom"
-                                          :title "tumblr"}
-                                       #_{:url
-                                          "https://twitter.com/vcq88ts50024"
-                                          :title "twitter"}
-                                       
-                                       #_{:title "soundcloud" :url 
-                                          "https://soundcloud.com/veixq9"}
+                
+                
+                
+                ;; {:title 
+                ;;  "mastodon" :url "https://mastodon.social/@veixq9"}
+                
+                {:title 
+                 "veixq9@github" :url "https://github.com/veixq9"
+                 ;; :icon "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                 }
 
-                                       {:title "deviantart"
-                                        :url "https://www.deviantart.com/likebad"}
+                {:title "nexurdoormat@dlive.tv"
+                 :url "https://dlive.tv/nexusdoormat"}                                       
+                
+                
 
-                                       
-                                       
-                                       
-                                       ;; {:title 
-                                       ;;  "mastodon" :url "https://mastodon.social/@veixq9"}
-                                       
-                                       {:title 
-                                        "github" :url "https://github.com/veixq9"}
+                {:title "veixq9@com.youtube"
+                 :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
 
-                                       {:title "nexurdoormat@dlive.tv"
-                                        :url "https://dlive.tv/nexusdoormat"}                                       
-                                       
-                                       
+                {:title "circuitbrainfile@soundcloud" :url 
+                 "https://soundcloud.com/circuitbrainfile"
+                 }
+                {:title "veix-quadron@soundcloud" :url
+                 "https://soundcloud.com/veix-quadron"
 
-                                       {:title "veixq9@com.youtube"
-                                        :url "https://www.youtube.com/channel/UCokRjvUbxCTFV9pFnGPeVkw"}
+                 }
+                ;; {:title "veixq9@soundcloud"
+                ;;  :url "https://soundcloud.com/veixq9"}
 
-                                       {:title "circuitbrainfile@soundcloud" :url 
-                                        "https://soundcloud.com/circuitbrainfile"
-                                        }
-                                       {:title "veix-quadron@soundcloud" :url
-                                        "https://soundcloud.com/veix-quadron"
+                {:title "veixq5@com.pinterest"
+                 :url "https://www.pinterest.de/veixq5/"}
 
-                                        }
-                                       ;; {:title "veixq9@soundcloud"
-                                       ;;  :url "https://soundcloud.com/veixq9"}
+                {:title "nilspore@app.revolt.chat"
+                 :description "nilspore@https://app.revolt.chat"
+                 :url "https://rvlt.gg/Ac9PKyMf"
+                 :icon "https://app.revolt.chat/favicon.ico"}
 
-                                       {:title "veixq5@com.pinterest"
-                                        :url "https://www.pinterest.de/veixq5/"}
+                
+                {:title  "scissors_4d@twitch.tv"
+                 :url "https://www.twitch.tv/scissors_4d/about" }
 
-                                       {:title "nilspore@app.revolt.chat"
-                                        :description "nilspore@https://app.revolt.chat"
-                                        :url "https://rvlt.gg/Ac9PKyMf"}
+                {:title  "hoosewatch@twitch.tv"
+                 :url "https://www.twitch.tv/hoosewatch/about" }
 
-                                       
-                                       {:title  "scissors_4d@twitch.tv"
-                                        :url "https://www.twitch.tv/scissors_4d/about" }
+                {:title  "z2muchmazvhole@twitch.tv"
+                 :url "https://www.twitch.tv/z2muchmazvhole/about" }
+                ]]
+         [:div.w3-container
+          [:h1 "VCN88TS"]
+          [:hr]
 
-                                       {:title  "hoosewatch@twitch.tv"
-                                        :url "https://www.twitch.tv/hoosewatch/about" }
+          [:div.w3-container
+           #_[:p.w3-xxlarge.w3-italic "links"]
+           [:br]
+           (into [:div.w3-container]
+                 (for [{:keys [url title] :as x} data]
+                   (let [icon  (or (:icon x) (str (re-find #"http.*?//.*?/" (:url x)) "favicon.ico"))]
+                     [:div.w3-container
+                      [:img.w3-cell.w3-round {:src icon
+                                              :alt " "
+                                              ;; :onerror "this.onerror=null;this.remove();"
+                                              :style {:width 16 :height 16}}]
+                      [:span " "]
+                      [:a {:key url
+                           :href url} title]
 
-                                       {:title  "z2muchmazvhole@twitch.tv"
-                                        :url "https://www.twitch.tv/z2muchmazvhole/about" }
-                                       ]]
-              [:div
-               [:a {:key url
-                    ;;:src url
-                    :href url} title]
-               [:br]
-               [:br]
-               ]))]]))
+                      [:br]
+                      [:br]])))]])))
+
+
+
 
 
 
