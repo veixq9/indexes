@@ -13,6 +13,18 @@
        "Seconds Elapsed: " @seconds-elapsed])))
 
 
+(defn icon
+  [state]
+  (fn [state]
+    (if @state
+      [:img {
+             :src (:src @state)
+             :alt " "
+             :on-error (fn [e]
+                         (reset! state nil))
+             :style {:width 16 :height 16}}]
+      [:span " "])))
+
 (defn indexes []
   (fn []
     (let [data [
@@ -82,27 +94,56 @@
                 {:title  "z2muchmazvhole@twitch.tv"
                  :url "https://www.twitch.tv/z2muchmazvhole/about" }
                 ]]
-         [:div.w3-container
-          [:h1 "VCN88TS"]
-          [:hr]
+      [:div.w3-container {:style {:font-size "160%"}}
+       [:h1 "VCN88TS"]
+       [:hr]
 
-          [:div.w3-container
-           #_[:p.w3-xxlarge.w3-italic "links"]
-           [:br]
-           (into [:div.w3-container]
-                 (for [{:keys [url title] :as x} data]
-                   (let [icon  (or (:icon x) (str (re-find #"http.*?//.*?/" (:url x)) "favicon.ico"))]
-                     [:div.w3-container
-                      [:img.w3-cell.w3-round {:src icon
-                                              :alt " "
-                                              ;; :onerror "this.onerror=null;this.remove();"
-                                              :style {:width 16 :height 16}}]
-                      [:span " "]
-                      [:a {:key url
-                           :href url} title]
+       [:div.w3-container
+        #_[:p.w3-xxlarge.w3-italic "links"]
+        [:br]
+        [:div.w3-container
+         [:table
+          [:tbody
+           (for [{:keys [url title] :as x} data]
+             (let [ico-url (or (:icon x) (str (re-find #"http.*?//.*?/" (:url x)) "favicon.ico"))
+                   state (r/atom (assoc x :src ico-url))]
+               [:tr {:key (random-uuid)}
+                [:td
+                 #_[:img {
+                          :src (:src @state)
+                          :alt " "
+                          :on-error (fn [e])
+                          :style {:width 16 :height 16}}]
+                 [icon state]
+                 #_(let [img-id (random-uuid)]
+                     [:img {
+                            :id img-id
+                            :src icon
+                            :alt " "
+                            :on-error (fn [e]
+                                        (-> (js/document.getElementById img-id)
+                                            (.-style)
+                                            .-visibility
+                                            (set! "hidden"))
+                                        #_(-> (js/document.getElementById img-id)
+                                              (.-src)
+                                              (set!  "")))
+                            :style {:width 16 :height 16}}])]
+                [:td " "]
 
-                      [:br]
-                      [:br]])))]])))
+                [:td [:a {
+                          ;; :style
+                          ;; {:float :left }
+                          :key url
+                          :href url} title]]]))]]
+         #_[:div.w3-cell-row
+            [:img.w3-cell.w3-round {:src icon
+                                    :alt " "
+                                    ;; :onerror "this.onerror=null;this.remove();"
+                                    :style {:width 16 :height 16}}]
+
+            [:a.w3-cell {:style {:float :left } :key url
+                         :href url} title]]]]])))
 
 
 
