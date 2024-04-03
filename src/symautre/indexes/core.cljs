@@ -84,15 +84,20 @@
                  :url "https://rvlt.gg/Ac9PKyMf"
                  :icon "https://app.revolt.chat/favicon.ico"}
 
+
+                ;; {:title  "scissors_4d@twitch.tv"
+                ;;  :url "https://www.twitch.tv/scissors_4d/about" }
+
                 
-                {:title  "scissors_4d@twitch.tv"
-                 :url "https://www.twitch.tv/scissors_4d/about" }
 
-                {:title  "hoosewatch@twitch.tv"
-                 :url "https://www.twitch.tv/hoosewatch/about" }
+                ;; {:title  "hoosewatch@twitch.tv"
+                ;;  :url "https://www.twitch.tv/hoosewatch/about" }
 
-                {:title  "z2muchmazvhole@twitch.tv"
-                 :url "https://www.twitch.tv/z2muchmazvhole/about" }
+                ;; {:title  "z2muchmazvhole@twitch.tv"
+                ;;  :url "https://www.twitch.tv/z2muchmazvhole/about" }
+
+                {:title  "https://www.twitch.tv/z2muchmazvhole/about"
+                 :url "https://www.twitch.tv/vcn88qs"}
                 ]]
       [:div.w3-container {:style {:font-size "160%"}}
        [:h1 "VCN88TS"]
