@@ -120,7 +120,7 @@
                                   :margin-right :auto
                                   }
                           :src
-                          "indexes/indexes%20qr.png"
+                          "indexes%20qr.png"
                           ;; "indexes/indexes%20qr.png?raw=true"
                           #_"https://github.com/veixq9/indexes/blob/main/public/indexes/indexes%20qr.png?raw=true" }]
          [:table
