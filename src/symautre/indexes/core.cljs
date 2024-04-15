@@ -52,6 +52,11 @@
                 
                 ;; {:title 
                 ;;  "mastodon" :url "https://mastodon.social/@veixq9"}
+
+
+                {:title 
+                 "vcn88qs@social.mastodon" :url "https://mastodon.social/@vcn88qs"}
+                
                 
                 {:title 
                  "veixq9@github" :url "https://github.com/veixq9"
