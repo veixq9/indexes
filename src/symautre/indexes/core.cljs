@@ -112,6 +112,17 @@
         #_[:p.w3-xxlarge.w3-italic "links"]
         [:br]
         [:div.w3-container
+         [:img.w3-center {
+                          :style {
+                                  :width "20%"
+                                  :display :block
+                                  :margin-left :auto
+                                  :margin-right :auto
+                                  }
+                          :src
+                          "indexes/indexes%20qr.png"
+                          ;; "indexes/indexes%20qr.png?raw=true"
+                          #_"https://github.com/veixq9/indexes/blob/main/public/indexes/indexes%20qr.png?raw=true" }]
          [:table
           [:tbody
            (for [{:keys [url title] :as x} data]
