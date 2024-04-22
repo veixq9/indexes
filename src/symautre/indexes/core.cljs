@@ -35,6 +35,9 @@
                 
                 #_{:url "https://www.tumblr.com/blog/arrowsfrom"
                    :title "tumblr"}
+
+                {:url "https://www.tumblr.com/blog/vcq88ts"
+                 :title "vcq88ts@com.tumblr"}
                 #_{:url
                    "https://twitter.com/vcq88ts50024"
                    :title "twitter"}
@@ -103,6 +106,10 @@
 
                 {:title  "https://www.twitch.tv/z2muchmazvhole/about"
                  :url "https://www.twitch.tv/vcn88qs"}
+
+
+
+                
                 ]]
       [:div.w3-container {:style {:font-size "160%"}}
        [:h1 "VCN88TS"]
@@ -167,18 +174,12 @@
                          :href url} title]]]]])))
 
 
-
-
-
-
-
 (defn ^:dev/after-load init []
   (rd/render [indexes]
              ;; (react-dom/createRoot (js/document.getElementById "main-content"))
              ;; (.-body js/document)
              (js/document.getElementById "main-content")
              ))
-
 
 
 
