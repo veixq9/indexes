@@ -32,6 +32,12 @@
                  :url "https://veixq9.github.io/voidnet/"
                  
                  }
+
+                {:title "discord"
+                 :url "https://discord.gg/JeAEnzr9"
+                 }
+
+                
                 
                 #_{:url "https://www.tumblr.com/blog/arrowsfrom"
                    :title "tumblr"}
